@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:todo/states/todos_state.dart';
-import 'package:todo/views/application/app_scafold.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:todo/views/list/todoContainer.dart';
 

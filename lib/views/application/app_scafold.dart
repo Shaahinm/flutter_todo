@@ -2,19 +2,21 @@ import 'package:flutter/material.dart';
 
 class AppScafold extends StatelessWidget {
   String _title;  
-  AppScafold({String title = "Home"}) {
+  Widget _body;
+  AppScafold({@required String title, Widget body }) {
     _title = title;
+    _body = body;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: getAppBar(),
-        body: Container(),
+        body: _body,
         bottomNavigationBar: Container());
   }
 
-  AppBar getAppBar() {
+  Widget getAppBar() {
     return AppBar(
       backgroundColor: Color(0xfff8faf8),
       centerTitle: true,
